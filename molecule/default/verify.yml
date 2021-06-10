@@ -9,17 +9,6 @@
   - name: Bare include (free-form)
     include_vars: ../../defaults/main.yml
 
-  - name: list PP families
-    command: "{{ aiida_venv }}/bin/verdi data upf listfamilies"
-    changed_when: false
-    register: aiida_pps
-
-  - name: check that PP families are set up properly
-    assert:
-      that:
-      - item.name in aiida_pps.stdout
-    with_items: "{{ aiida_pseudopotentials }}"
-
   - name: print aiida-core version
     command: "{{ aiida_venv }}/bin/pip show aiida-core"
     changed_when: false

@@ -43,13 +43,3 @@
   - plugin.value.codes_var is defined
   - lookup('vars', plugin.value.codes_var, default='') is truthy
   tags: [aiida_codes]
-
-# Set up pseudopotentials
-- include_tasks: aiida-pps.yml
-  vars:
-    pp: "{{ item }}"
-  with_items: "{{ aiida_pseudopotentials }}"
-  tags: [aiida_pps]
-
-# - include_tasks: aiida-examples.yml
-#   tags: [aiida_examples]
