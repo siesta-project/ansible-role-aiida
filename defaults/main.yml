@@ -101,7 +101,7 @@ aiida_plugins:
     codes_var: "quantum_espresso_executables"
     omit_plugins: ["quantumespresso.hp", "wannier90"]
   aiida-siesta:
-    version: "1.1.0"
+    version: "1.2.0"
     code_prefix: siesta
     codes_var: "siesta_executables"
   aiida-wannier90:
