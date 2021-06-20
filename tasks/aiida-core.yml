@@ -122,3 +122,14 @@
   loop: "{{ aiida_plugins|dict2items }}"
   loop_control:
     loop_var: plugin
+
+- name: Install TB2J
+  pip:
+    name: TB2J
+    virtualenv: "{{ aiida_venv }}"
+
+- name: Install banddownfolder
+  pip:
+    name: banddownfolder
+    virtualenv: "{{ aiida_venv }}"
+

@@ -22,10 +22,8 @@ aiida_install_packages:
 - wheel
 - ipykernel  # required to add the venv as a kernel
 - psycopg2-binary>=2.8,<2.9
-aiida_extra_packages: []
-aiida_jupyter_packages:
 - jupyter~=1.0.0
-- jupyterlab~=2.2.9
+aiida_extra_packages: []
 
 # profile
 aiida_profile_name: generic
