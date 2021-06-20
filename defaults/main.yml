@@ -21,6 +21,7 @@ aiida_install_packages:
 - pip~=21.1
 - wheel
 - ipykernel  # required to add the venv as a kernel
+- psycopg2-binary>=2.8,<2.9
 aiida_extra_packages: []
 aiida_jupyter_packages:
 - jupyter~=1.0.0
@@ -30,7 +31,7 @@ aiida_jupyter_packages:
 aiida_profile_name: generic
 aiida_profile_first_name: Max
 aiida_profile_last_name: Scientist
-aiida_profile_institution: Quantum Mobile
+aiida_profile_institution: Siesta Mobile
 aiida_profile_email: aiida@localhost
 
 # database backend
