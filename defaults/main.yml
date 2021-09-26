@@ -20,6 +20,7 @@ aiida_venv_constraints: "{{ aiida_data_folder }}/constraints.txt"
 aiida_install_packages:
 - pip~=21.1
 - wheel
+- jupyter-client==6.1.12
 - ipykernel  # required to add the venv as a kernel
 - jupyter~=1.0.0
 aiida_extra_packages: []
